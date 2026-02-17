@@ -49,7 +49,7 @@ return {
           left_pad = 2,
         },
         checkbox = {
-          left_margin = 2,
+          -- left_margin = 2,
         },
         code = {
           width = 'full',
