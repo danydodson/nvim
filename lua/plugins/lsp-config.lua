@@ -26,7 +26,7 @@ return {
           'bashls',
           'clangd',
           'cssls',
-          'gopls',
+          -- 'gopls',
           'html',
           'lua_ls',
           'tailwindcss',

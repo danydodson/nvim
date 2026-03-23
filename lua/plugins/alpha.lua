@@ -30,7 +30,7 @@ return {
         dashboard.button('n', ' 󰻭' .. ' New', '<cmd>ene<CR>'),
         dashboard.button('p', ' ' .. ' Projects', '<cmd>Telescope projects<CR>'),
         dashboard.button('r', ' 󰕁' .. ' Recent', '<cmd>Telescope oldfiles<CR>'),
-        dashboard.button('g', ' 󰺯' .. ' Grep', '<cmd>Telescope live_grep<CR>'),
+        -- dashboard.button('g', ' 󰺯' .. ' Grep', '<cmd>Telescope live_grep<CR>'),
         yazi_button,
         dashboard.button('l', ' 󰒲' .. ' Lazy', '<cmd> Lazy <CR>'),
         dashboard.button('q', ' ' .. ' Quit', '<cmd>exit<CR>'),

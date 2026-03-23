@@ -24,7 +24,7 @@ return {
         { '<leader>d', group = 'debug' },
         { '<leader>e', hidden = true },
         { '<leader>f', group = 'find' },
-        { '<leader>g', group = 'git' },
+        -- { '<leader>g', group = 'git' },
         { '<leader>h', group = 'harpoon' },
         { '<leader>l', group = 'lazy' },
         { '<leader>m', group = 'markdown' },

@@ -1,5 +1,7 @@
 -- lua/plugins/markdown.lua
 
+-- return {}
+
 return {
   {
     'MeanderingProgrammer/render-markdown.nvim',

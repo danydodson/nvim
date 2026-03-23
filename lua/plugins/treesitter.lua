@@ -7,6 +7,7 @@ return {
     build = ':TSUpdate',
     config = function()
       require('nvim-treesitter').setup {
+        -- parser_install_dir = vim.fn.stdpath("data") .. "/site",
         auto_install = true,
         highlight = {
           enable = true,
@@ -54,4 +55,5 @@ return {
       }
     end,
   },
+  -- vim.opt.runtimepath:append(vim.fn.stdpath("data") .. "/site")
 }
