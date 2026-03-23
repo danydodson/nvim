@@ -8,7 +8,7 @@ return {
       size = 15,
       open_mapping = [[<c-\>]],
       direction = 'horizontal',
-      hide_numbers = false,
+      hide_numbers = true,
       highlights = {
         Normal = {
           -- guibg = '#31353D',

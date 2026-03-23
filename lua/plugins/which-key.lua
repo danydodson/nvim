@@ -14,7 +14,9 @@ return {
       wk.setup {
         show_help = false,
         show_keys = false,
-        icons = { mappings = false },
+        icons = {
+          mappings = false
+        },
       }
       wk.add {
         { '<leader>/', hidden = true },

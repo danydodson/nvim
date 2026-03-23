@@ -11,6 +11,7 @@ return {
         options = {
           icons_enabled = true,
           theme = 'onedark',
+          globalstatus = true,
           component_separators = {
             left = '',
             right = '',
@@ -31,8 +32,8 @@ return {
           lualine_c = { 'filename' },
           lualine_x = { 'filetype' }, -- {}
           lualine_y = {},
-          lualine_z = { opco },
-          -- lualine_z = { '' },
+          -- lualine_z = { opco },
+           lualine_z = { '' },
         },
         inactive_sections = {
           lualine_a = {},

@@ -34,16 +34,12 @@ end
 -- I defined it as a function, because I call this function from the
 -- mini.files plugin to open the highlighted dir in a tmux pane on the right
 function M.tmux_pane_function(dir)
-  -- NOTE: variable that controls the auto-cd behavior
   local auto_cd_to_new_dir = true
-  -- NOTE: Variable to control pane direction: 'right' or 'bottom'
-  -- If you modify this, make sure to also modify TMUX_PANE_DIRECTION in the
-  -- zsh-vi-mode section on the .zshrc file
-  -- Also modify this in your tmux.conf file if you want it to work when in tmux
-  -- copy-mode
+  -- Variable to control pane direction: 'right' or 'bottom'
+  -- If you modify this, make sure to also modify TMUX_PANE_DIRECTION in the zsh-vi-mode section on the .zshrc file
+  -- Also modify this in your tmux.conf file if you want it to work when in tmux copy-mode
   local pane_direction = vim.g.tmux_pane_direction or "bottom"
-  -- NOTE: Below, the first number is the size of the pane if split horizontally,
-  -- the 2nd number is the size of the pane if split vertically
+  -- Below, the first number is horizontal split size, the second is vertical split size,
   local pane_size = (pane_direction == "right") and 60 or 15
   local move_key = (pane_direction == "bottom") and "C-l" or "C-k"
   local split_cmd = (pane_direction == "right") and "-h" or "-v"
@@ -96,7 +92,7 @@ end
 -- If I execute the function without an argument, it will open the dir where the
 -- current file lives
 vim.keymap.set({ "n", "v", "i" }, "<M-t>", function() M.tmux_pane_function() end,
-  { desc = "[P]Terminal on tmux pane" })
+  { desc = "[P]terminal on tmux pane" })
 
 -- -- Open a tmux pane on the right in bash, in the same directory as the current file
 -- -- Opening it in bash because it's faster, I don't have to run my .zshrc file,
