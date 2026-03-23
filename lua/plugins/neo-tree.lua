@@ -7,7 +7,7 @@ return {
     dependencies = {
       'nvim-lua/plenary.nvim',
       'MunifTanjim/nui.nvim',
-      'nvim-tree/nvim-web-devicons'
+      'nvim-tree/nvim-web-devicons',
     },
     cmd = 'Neotree',
     keys = {
@@ -83,12 +83,18 @@ return {
             ['<esc>'] = 'cancel',
             ['l'] = { 'toggle_node', nowait = true },
             ['P'] = { 'toggle_preview', config = { use_float = false, use_image_nvim = true } },
+            ['<C-n>'] = 'add',
           },
         },
         filesystem = {
           follow_current_file = {
             enabled = true,
             leave_dirs_open = true,
+          },
+          window = {
+            mappings = {
+              ['n'] = 'add',
+            },
           },
           hijack_netrw_behavior = 'open_current',
           use_libuv_file_watcher = true,

@@ -2,10 +2,6 @@
 
 -- https://github.com/mg979/vim-visual-multi
 
--- In macos disable Settings - Keyboard - Keyboard Shortcuts
--- Disable both 'Mission Control' shortcuts that use ctrl+down and ctrl+up
--- As those are used by the plugin to create vertical cursors
-
 -- select words with Ctrl-N
 -- create cursors vertically with Ctrl-Down/Ctrl-Up
 -- select one character at a time with Shift-Arrows
@@ -24,7 +20,7 @@
 -- Place on the first word and do 'ctrl+down' to create vertical cursors
 -- Then change to extend mode with 'tab'
 -- Then type 'g/' and enter what you want to match, a word or symbol
--- Press enter and your text will be selected
+-- press enter and your text will be selected
 
 -- I wanted to insert an "i" between a ' and a ; in multiple lines
 -- I put the cursor in the '
