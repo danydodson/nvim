@@ -12,6 +12,7 @@ return {
         '.hg',
         '.bzr',
         '.svn',
+        '.vscode',
         'Makefile',
         'package.json',
         '.solution',
